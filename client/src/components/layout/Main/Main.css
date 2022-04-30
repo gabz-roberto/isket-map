@@ -1,0 +1,14 @@
+.main {
+  height: 100%;
+  width: 80%;
+  background-color: #e5e8ff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}

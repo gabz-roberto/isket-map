@@ -1,0 +1,21 @@
+.aside {
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(to bottom, #1b325b, #335fab);
+  color: #fff;
+  padding: 20px;
+}
+
+.title-1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.aside > hr {
+  border: 1px solid crimson;
+  width: 100%;
+  margin: 20px 0;
+}
