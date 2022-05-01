@@ -4,13 +4,8 @@ import axios from "../../api/index.js";
 import {
   MapContainer,
   TileLayer,
-  Marker,
-  Popup,
   LayersControl,
   LayerGroup,
-  all,
-  FeatureGroup,
-  Rectangle,
   Circle,
 } from "react-leaflet";
 
@@ -49,7 +44,7 @@ const Main = (props) => {
                         country.location.coordinates[0],
                       ]}
                       pathOptions={{ fillColor: "blue" }}
-                      radius={80000}
+                      radius={70000}
                     />
                   ))
                 : null}

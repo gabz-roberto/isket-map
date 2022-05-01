@@ -4,7 +4,8 @@ import './Table.css';
 
 const Table = (props) => {
     return (
-        <table className="table">
+        <div className="table-container">
+                    <table className="table">
             <thead>
                 <tr>
                     <th>Países</th>
@@ -65,8 +66,30 @@ const Table = (props) => {
                 <tr>
                     <td>Brasil</td>
                 </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td>Brasil</td>
+                </tr>
             </tbody>
         </table>
+        </div>
     )
 }
 
