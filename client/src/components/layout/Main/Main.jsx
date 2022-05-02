@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, LayersControl, LayerGroup, Circle, FeatureGroup } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  LayersControl,
+  LayerGroup,
+  Circle,
+  FeatureGroup,
+} from "react-leaflet";
 import { EditControl } from "react-leaflet-draw";
 
 import axios from "../../api/index.js";
 
 import "leaflet-draw/dist/leaflet.draw.css";
 import "./Main.css";
-
 
 const Main = (props) => {
   const [countries, setCountries] = useState(null);
@@ -23,11 +29,17 @@ const Main = (props) => {
     fetchCountries();
   }, []);
 
-  const _onCreate = (event) => { console.log(event) }
+  const _onCreate = (event) => {
+    console.log(event);
+  };
 
-  const _onEdited = (event) => { console.log(event) }
+  const _onEdited = (event) => {
+    console.log(event);
+  };
 
-  const _onDeleted = (event) => { console.log(event) }
+  const _onDeleted = (event) => {
+    console.log(event);
+  };
 
   return (
     <main className="main">
@@ -36,7 +48,7 @@ const Main = (props) => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        
+
         <FeatureGroup>
           <EditControl
             position="topright"
@@ -52,7 +64,7 @@ const Main = (props) => {
             // }}
           />
         </FeatureGroup>
-        
+
         <LayersControl position="topright">
           <LayersControl.Overlay checked name="Layer group with circles">
             <LayerGroup>
